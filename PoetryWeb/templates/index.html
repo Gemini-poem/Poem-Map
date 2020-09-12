@@ -10,13 +10,17 @@
 <!--页面的头部-->
     <div id="header">
       <div class="container">
-      	<div class="header_left"><p>古诗-地图</p></div>
+      	<div class="header_left" style="font-family:黑体;font-weight:bold;">古诗-地图</div>
       	<div class="header_right">
-      		<ul class="right">
-      		<li><a href="{% url 'index' %}">首页</a></li>
-      		<li><a href="{% url 'poetrysearch' %}">古诗搜索</a></li>
-      		<li><a href="{% url 'positionsearch' %}">地点搜索</a></li>
-      		<li><a href="{% url 'usermanual' %}}">使用手册</a></li>
+      		<ul class="right" style="font-family:宋体;">
+      		<li class="mainnav"><a href="{% url 'index' %}">首页</a></li>
+      		<li class="menu2" onmouseover="this.className='menu1'" onmouseout="this.className='menu2'"><a href="#">检索方式</a>
+              <ul>
+                <li><a href="{% url 'poetrysearch' %}" style="color:black;">古诗搜索</a></li>
+                <li><a href="{% url 'positionsearch' %}l" style="color:black;">地点搜索</a></li>
+              </ul>
+          </li>
+      		<li class="mainnav"><a href="{% url 'usermanual' %}">使用手册</a></li>
       	</ul>
       	</div>
       </div>
@@ -26,19 +30,17 @@
     <div id="middle">
       <div class="container">
       	  <div id="pic">
-      	  	 <img src="{% static 'images/back.jpg' %}" height="600" width="100%">
+      	  	 <img src="{% static 'images/background.jpg' %}" height="600" width="100%">
       	  	 <h1>古诗词地图索引网站</h1>
       	  </div>
       	  <br/>
       	  <ul>
-      	  	<li><a href="{% url 'poetrysearch' %}">由古诗词搜索地域</a></li>
-      	  	<li><a href="{% url 'positionsearch' %}">由地域搜索古诗词</a></li>
-          <br/>
-          <li> <img class="bigger" src="{% static 'images/gushi.jpg' %}"></li>
-          <li><img class="bigger" src="{% static 'images/ditu.jpg' %}"></li>
+      	  	<li><a href="{% url 'poetrysearch' %}"><p>由古诗词搜索地域</p><img class="bigger" src="{% static 'images/poem_search.jpg' %}"></a></li>
+      	  	<li><a href="{% url 'positionsearch' %}"><p>由地域搜索古诗词</p><img class="bigger" src="{% static 'images/position_search.jpg' %}"></a></li>
       	  </ul>
       </div>
     </div>
+
 <!--页面的底部-->
     <div id="footer">
       <div class="container"></div>

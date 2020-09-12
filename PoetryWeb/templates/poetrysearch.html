@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="{% static 'css/poetrycss1.css' %}">
 </head>
 <body>
+
 <!--构建网页顶部-->
 	<div id="head">
         <div class="container">
@@ -15,103 +16,55 @@
             </div>
         </div>
     </div>
+
 <!--构建网页中部-->    
     <div id="mid">
          <div class="container">
              <div class="mid_left left">
-                 <img src="{% static 'images/gushi.jpg' %}" width="700" height="400">
+                 <img src="{% static 'images/background2.jpg' %}" width="700" height="400">
              <br/>
              <p class="part1">请输入你要进行检索的古诗词</p>
              <div class="input">
-                 <form action="{% url 'poetrysearch' %}"  method="get">
+                 <form action="{% url 'poetrysearch' %}" method="get">
                     {% csrf_token %}
                     <div class="form1">题目：<input type="text" name="gushititle" style="font-size: 20px;">
                     </div>
                     <div class="form2"> 
                     作者【<input type="text" name="poem" style="font-size: 18px; width:100px; ">】
                     朝代【<input type="text" name="dynasty" style="font-size: 18px; width:100px;">】
-                    <input type="submit" value="点击进行检索" name="submitButton" id="button" >
                     </div>
                     <div class="form3">
-                    <textarea class="part2" rows="15" cols="30" name="wenben" style="font-size: 20px">请输入内容...
-                    </textarea>              
+                    <textarea class="part2" name="wenben" rows="15" cols="30" style="font-size: 20px">请输入内容...</textarea>           
                     </div>
-                    <br/>
-                </form>
-             </div>
-             <div>
-                 <form action=" " class="form4">
+                    <p><br/><br/></p><br/>
                      <input type="submit" value="点击进行检索" name="submitButton" id="button" >
-                 </form>
+                </form>
              </div>
              </div>
              <div class="mid_right right">
                 <div class="side_column">
                     <ul>
-                     <img src="{% static 'images/shi.jpg' %}"height="300" width="300">
-                     <li><a href="{% url 'poetrysearch' %}">选择由古诗词查地域</a></li>
+                     <li><a href="{% url 'poetrysearch' %}"><img src="{% static 'images/poem_search.jpg' %}" height="300" width="300"><br/>选择由古诗词查地域</a></li>
                      <p><br/><br/></p>
                      <br/>
-                      <img src="{% static 'images/ditu.jpg' %}"  width="300" height="300">
-                      <li><a href="{% url 'positionsearch' %}">选择由地域查古诗词</a></li>
+                      <li><a href="{% url 'positionsearch' %}"><img src="{% static 'images/position_search.jpg' %}"  width="300" height="300"><br/>选择由地域查古诗词</a></li>
                </ul>
                 </div>
              </div>
          </div>
     </div>
+    
 <!--构建网页底部-->
     <div id="foot">
          <div class="to_index">
-            <p style="color:white; font-weight: bold; float: right;">关于XXXX</p> <br>
+            <p style="color:white; font-weight: bold; float: right;">关于我们</p> <br>
             <ul style="float: left; margin-left: 200px;">
                 <li><a href="{% url 'index' %}">首页</a></li>
                 <li><a href="{% url 'poetrysearch' %}">古诗搜索</a></li>
                 <li><a href="{% url 'positionsearch' %}">地点搜索</a></li>
-                <li><a href="{% url 'usermanual' %}}">使用手册</a></li>
+                <li><a href="{% url 'usermanual' %}}">使用手册</a></li>        
+            </ul>
          </div>
     </div>    
 </body>
 </html>
-
-
-<!--<div id="header">
-        <h1>古诗词地图检索</h1>
-    </div>
-        <div id="middle-left">
-            <div class="container">
-                <img src="image/gushi.jpg" width="1000" height="600">
-                <p class="part1" >请输入你要进行检索的古诗词</p>
-                <br />
-                <div id="formstr">
-                <form action="">
-                    题目：<input type="text" name="gushititle">
-                    <hr/>
-                    作者【<input type="text" name="poem">】
-                    朝代【<input type="text" name="dynasty">】
-                    <br/>
-                    <textarea rows="20" cols="40">请输入内容...
-                    </textarea>
-                    <br/>
-                </form>
-              </div>
-              <div id="button">
-                <form action="">
-                <input type="submit" value="点击进行检索" name="submitButton" id="button">
-                </form>
-              </div>
-            </div>
-        </div>
-
-        <div id="middle-right">
-            <div id="search">
-              <ul>
-                 <img src="image/shi.jpg" width="350" height="350">
-                 <li><a href="#">选择由古诗词查地域</a></li>
-                 </br>
-                 <img src="image/ditu.jpg"  width="350" height="350">
-                 <li><a href="#">选择由地域查古诗词</a></li>
-              </ul>
-            </div>
-        </div>
-
-    </div>-->

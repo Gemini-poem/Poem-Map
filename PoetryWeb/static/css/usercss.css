@@ -1,0 +1,75 @@
+/*用户手册css部分*/
+*{
+	padding: 0;
+	margin:0;
+}
+ol,ul{
+	list-style-type: none;
+}
+a{
+	color:white;
+	text-decoration:none;
+}
+
+.conta{
+	width: 1320px;
+	margin: 0 auto;
+}
+#user_header{
+	height:100px;
+	background-color: #bb885d;
+}
+.user_header_left{
+	float: left;
+	width: 400px;
+	margin-top: 30px;
+	font-size: 40px;
+}
+.user_header_right{
+	float: right;
+	width: 500px;
+	margin-top: 10px;
+	font-size: 22px;
+}
+#user_header h1{
+	font-size: 30px;
+	color: black;
+	font-weight: bold;
+}
+#user_header ul li{
+	float:left;
+	border-right: 1px solid black;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+#user_header ul a{
+	margin-right: 7px;
+	color:white; 
+}
+#user_header ul a:hover{
+	font-weight: bold;
+	color:black;
+	background-color: white;
+	border-bottom: 1px solid black;
+}
+
+
+#user_mid{
+	background-color: #fff;
+	height: 950px; 
+}
+#user_mid p{
+	width: 1000px;
+	height:400px;
+	font-size: 30px;
+	margin:100px auto; 
+}
+
+#user_footer{
+	
+	margin-top:20px; 
+	height: 30px;
+	background-color:#956849;
+	bottom: 0;
+	border-bottom:3px solid black; 
+}

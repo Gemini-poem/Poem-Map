@@ -21,6 +21,7 @@ a{
 }
 /*设置页面头部*/
 #header{
+	width:2150px; 
 	height:100px;
 	background-color: #bb885d;
 }
@@ -28,8 +29,9 @@ a{
 	float: left;
 	width: 400px;
 	margin-top: 30px;
+	font-family:黑体;
+	font-weight:bold;
 	font-size: 40px;
-	font-weight: bold;
 }
 .header_right{
 	float: right;
@@ -49,6 +51,7 @@ a{
 	margin-top: 30px;
 }
 #header ul a{
+	color:white; 
 	margin-right: 7px;
 }
 #header ul a:hover{
@@ -57,6 +60,27 @@ a{
 	background-color: white;
 	border-bottom: 1px solid black;
 }
+
+
+/*鼠标经过*/
+.menu1{ 
+   height:auto;    
+   overflow-y:hidden; 
+   filter: Alpha(opacity=70);
+   background-color:#D2B48C; 
+}
+/*鼠标不*/
+.menu2{
+	width:100px; 
+    height:25px; 
+	overflow-y:hidden;
+	filter: Alpha(opacity=10);
+    color:black; 
+}
+
+
+
+
 /*中间设置*/
 #middle{
 	margin-top: 20px;
@@ -84,7 +108,7 @@ a{
 	font-weight: bold;
 	color:black;
 }
-#middle ul a:hover{
+#middle ul a p:hover{
     background-color: #e8b797;
     border-bottom: 2px solid red;    
 }
@@ -93,10 +117,11 @@ a{
 	width:240px;
 }
 .bigger:hover{
-	transform: scale(1.2);
+	transform: scale(1.05);
 }
 /*底部设置*/
 #footer{
+    width:2150px; 
 	position: relative;
 	height: 30px;
 	background-color:#956849;
@@ -114,5 +139,13 @@ a{
 	height:400px;
 	font-size: 30px;
 	margin:100px auto; 
-	color: red;
+}
+
+#user_footer{
+	
+	margin-top:20px; 
+	height: 30px;
+	background-color:#956849;
+	bottom: 0;
+	border-bottom:3px solid black; 
 }

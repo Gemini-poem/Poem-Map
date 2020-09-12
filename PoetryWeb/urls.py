@@ -7,6 +7,5 @@ urlpatterns = [
      path("positionsearch/",views.positionsearch,name="positionsearch"),
      path("usermanual/",views.usermanual,name="usermanual"),
      path("result/",views.result,name="result"),
-     path("login/",views.login,name="login"),
 ]
 
