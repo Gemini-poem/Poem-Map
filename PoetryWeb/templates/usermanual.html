@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用指南</title>
+	<link rel="stylesheet" type="text/css" href="{$ static 'css/indexstr.css' %}">
+</head>
+<body>
+<!-- 用户手册页面头部 -->
+	<div id="header">
+      <div class="container">
+      	<div class="header_left">古诗-地图</div>
+      	<ul class="header_right">
+			<li><a href="{% url 'index' %}">首页</a></li>
+			<li><a href="{% url 'poetrysearch' %}">古诗搜索</a></li>
+			<li><a href="{% url 'positionsearch' %}">地点搜索</a></li>
+			<li><a href="{% url 'usermanual' %}}">使用手册</a></li>
+      	</ul>
+      </div>
+	</div>
+
+    <div id="user_mid">
+    	<div class="container">
+    		<p>
+    		  这里是使用手册：在使用本网站开始之前，你可以在首页界面选择要进行搜索的方式，选择完成后进入到想应的搜索界面，之后根据页面的提示输入要搜索的部分，进行检索。
+    	    </p>
+    	</div>
+    </div>
+<!--页面的底部-->
+    <div id="footer">
+      <div class="container"></div>
+    </div>
+</body>
+</html>
