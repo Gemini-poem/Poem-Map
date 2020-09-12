@@ -23,13 +23,16 @@
              <br/>
              <p class="part1_position">请输入要搜索的地点</p>
              <div class="input_position">
-                  <form action="" id=form1_position>
+                  <form action="{positionsearch.html}" id=form1_position method="POST" >
+                    {% csrf_token %}
                 	<p class="form2_position">地域名</p>
-                	<input type="text" name="positionname" style="font-size: 20px;">
+                    <input type="text" name="positionname" style="font-size: 20px;">
+                    <input type="submit" value="点击进行检索" name="submitButton" id="button_position">
                   </form>
              </div>
              <div>
-                 <form action="" class="form4">
+                 <form action=" " class="form4" >
+                    {% csrf_token %}
                      <input type="submit" value="点击进行检索" name="submitButton" id="button_position">
                  </form>
              </div>

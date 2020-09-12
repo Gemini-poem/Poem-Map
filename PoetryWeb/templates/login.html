@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex</title>
+</head>
+<body>
+        <form action="{% url 'login'%} " method="get">
+            {% csrf_token %}
+                    <P><label>用户：</label>><input  name="username"/></P>  
+                    <br/>
+                    <P><label>密码：<input name="pass"/></label></P>
+                    <input type="submit" value="点击进行检索" id="submitbutton" >
+        </form>	 
+</body>
+</html>
+
