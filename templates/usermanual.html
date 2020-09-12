@@ -1,0 +1,88 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>使用指南</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/indexstr.css' %}">
+  <!-- bootstrap CSS文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- 用户手册页面头部 -->
+	<div id="header">
+      <div style="margin:0 auto;width: 1320px;">
+      	<div class="header_left" style="font-family:黑体;font-weight:bold;">古诗-地图</div>
+      	<div class="header_right">
+          <ul class="right" style="font-size: 22px; margin-bottom:15px;font-family:宋体;">
+           <li><a href="{% url 'index' %}">首页</a></li>
+           <li class="menu2" onmouseover="this.className='menu1'" onmouseout="this.className='menu2'"><a href="#">检索方式</a>
+              <ul>
+                <li><a href="{% url 'poetrysearch' %}" style="color:black;">古诗搜索</a></li>
+                <li><a href="{% url 'positionsearch' %}" style="color:black;">地点搜索</a></li>
+              </ul>
+          </li>
+           <li><a href="{% url 'usermanual' %}" >使用手册</a></li>
+          </ul> 
+        </div>
+      </div>
+	</div>
+
+<!-- 页面中部 -->
+  <div style="margin-top: 40px;">
+    	<div class="row" style="width:2000px; margin:0 auto;">
+        <div class="col-sm-6 col-md-4"  style="width: 950px;">
+          <div class="thumbnail">
+           <img src="{% static 'images/image1.png' %}" width="700" height="600">
+           <div class="caption">
+             <h3>方法一</h3>
+             <p style="font-size:20px;">在网站首页的导航栏中选择要进行检索所内容的方向。</p>
+           </div>
+          </div>
+        </div>
+
+         <div class="col-sm-6 col-md-4"  style="width: 950px;">
+          <div class="thumbnail">
+           <img src="{% static 'images/image2.png' %}"  width="700" height="600">
+           <div class="caption">
+             <h3>方法二</h3>
+             <p style="font-size:20px;">在网站首页的内容部分选择要进行检索的方向。</p>
+           </div>
+          </div>
+        </div>
+
+         <div class="col-sm-6 col-md-4"  style="width: 950px;">
+          <div class="thumbnail">
+           <img src="{% static 'images/image3.png' %}">
+           <div class="caption">
+             <h3>方法三</h3>
+             <p style="font-size:20px;">已经经过一次选择后，可以选择在当前网站的右侧栏选择要进行检索的方向。</p>
+           </div>
+          </div>
+        </div>
+
+         <div class="col-sm-6 col-md-4"  style="width: 950px;">
+          <div class="thumbnail">
+           <img src="{% static 'images/image4.png' %}">
+           <div class="caption">
+             <h3>方法四</h3>
+             <p style="font-size:20px;">已经经过一次选择后，可以选择在当前网站的底部页脚选择要进行检索的方向。</p>
+           </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+<!--页面的底部-->
+    <div id="user_footer">
+      <div class="container"></div>
+    </div>
+</body>
+</html>

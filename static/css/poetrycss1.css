@@ -1,0 +1,195 @@
+*{
+	padding:0;
+	margin:0; 
+}
+ol,ul{
+	list-style-type: none;
+}
+.right{
+  float: right;
+}
+.left{
+   float: left;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+.container{
+	margin:0 auto;
+	width: 1320px;
+}
+/*页面顶部*/
+#head{
+  height: 200px;
+  background-color: #cfae85; 
+}
+#head.title{
+	height: 150px;
+}
+#head h1{
+  text-align: center;
+  position: relative;
+  top: 50px;
+  font-weight: bold;
+  font-size: 50px;
+  color:white;
+  padding-bottom: 10px;
+  border-bottom:2px solid white;   
+}
+/*页面中部*/
+#mid{
+	height:1200px;
+	margin-top: 20px;
+}
+/*中部左半部分*/
+.mid_left{
+	float: left;
+	width: 700px; 
+	height: 100%;
+	margin-left: 20px;
+}
+.part1{
+	font-size:25px;
+	color：black;
+    font-weight: bold;
+    width: 380px;
+    margin-top: 20px;
+    border-bottom:1px solid black; 
+}
+.input{
+	width: 500px;
+	height: 500px;
+	background-color: #e8b797;
+	font-weight: bold;
+	border-radius: 25px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+/*????????????????????????????????????/*/
+.form1{
+	color: white;
+    position: relative;
+	font-weight: bold;
+	font-size:20px;
+	top: 10px;
+	padding-bottom: 2px;
+	border-bottom: 2px solid white;
+}
+.form2{
+	color: black;
+	font-size: 20px;
+	position: relative;
+	top: 20px;
+}
+.form3{
+	position: relative;
+	top:25px;
+	color:black;
+	font-size:15px;
+}
+.form4{
+	 text-align: center;
+	 color: #956849;
+}
+#button{ 
+	width: 100px;
+	height: 30px;
+	color: #956849;
+	font-size:15px;
+}
+
+/*中部右半部分*/
+.mid_right{
+	float: right;
+    width: 400px;
+    height: 1100px;
+    margin-left: 200px;
+    background-color:#bb885d; 
+}
+.side_column{
+    margin-left:50px;
+    margin-top:50px;  
+}
+.mid_right ul li{
+	margin-top:20px; 
+	margin-bottom:100px;
+	font-size: 25px; 
+	color: black;
+}
+.mid_right ul a:hover{
+   color:white;
+   font-weight: bold;
+   background-color: #956849;
+}
+.mid_right img:hover{
+    border-bottom:0px;
+	transform:scale(1.08); 
+}
+/*页面底部*/
+#foot{
+	position: relative;
+    height:250px;
+    width: 100%;
+    background-color: #908e79;
+    border-top:1px solid black; 
+}
+.to_index{
+   width: 400px;
+   height:95px;
+   float:right;
+   position: relative;
+   font-size: 30px;
+   top:5px;
+   right: 400px;
+}
+
+#foot ul li{
+
+	 margin-top: 3px;                    ?????????????????????????????????//
+}
+#foot a{
+	font-size:20px;
+	color: white;
+	font-weight: bold;
+}
+#foot a:hover{
+	color: red;
+	border-bottom:2px solid white; 
+}
+
+/*地图搜索部分不同代码*/
+.part1_position{
+	font-size:25px;
+	color：black;
+    font-weight: bold;
+    width: 350px;
+    margin-top: 20px;
+    border-bottom:1px solid black; 
+}
+.input_position{
+	width: 500px;
+	height: 320px;
+	background-color: #e8b797;
+	margin: 50px auto;
+	border-radius: 25px; 
+}
+#form1_position{
+	color: white;
+	position:relative;
+	font-size:30px;
+	top:100px;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.form2_position{
+	font-weight: bold;
+	border-bottom: 2px solid white;
+}
+#button_position{
+   width: 100px;
+	height: 30px;
+	color: #956849;
+	font-size:15px;
+}
